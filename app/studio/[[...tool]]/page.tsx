@@ -13,7 +13,7 @@ import config from "../../../sanity.config";
 export const dynamic = "auto";
 
 // Keep the node runtime
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 // Use dynamic import for NextStudio
 const DynamicStudio = dynamicImport(() =>
