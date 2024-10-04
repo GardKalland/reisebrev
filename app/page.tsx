@@ -11,7 +11,7 @@ import { PortableTextBlock } from "@portabletext/types";
 interface Reisebrev {
   title: string;
   stampImage: string | null;
-  content: PortableTextBlock[]; // Replace 'any' with 'PortableTextBlock[]'
+  content: PortableTextBlock[]; 
   publishedAt: string;
 }
 export default function Home() {
