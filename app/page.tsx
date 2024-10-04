@@ -4,14 +4,16 @@ import { client } from "../sanity/lib/client";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 import styles from "./page.module.css";
+import { PortableTextBlock } from "@portabletext/types";
+
+
 
 interface Reisebrev {
   title: string;
   stampImage: string | null;
-  content: any;
+  content: PortableTextBlock[]; // Replace 'any' with 'PortableTextBlock[]'
   publishedAt: string;
 }
-
 export default function Home() {
   const [letters, setLetters] = useState<Reisebrev[]>([]);
   const [openedIndex, setOpenedIndex] = useState<number | null>(null);
